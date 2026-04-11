@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>TradeLogic</name>
+  </assembly>
+  <members>
+    <member name="M:com.pfsoft.proftrading.cash.indicators.PTLIndicator.OnPaintChart(System.Object,Runtime.Script.Charts.PaintChartEventArgs)">
+      <summary>
+            Происходит рисование одного из связанных чартов
+            </summary>
+    </member>
+    <member name="T:Runtime.Script.NETProcessor.OnUpdate">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Runtime.Script.ComboboxItemAttribute">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Runtime.Script.ComboboxItemAttribute.Name">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Runtime.Script.ComboboxItemAttribute.Value">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Runtime.Script.ComboboxItemAttribute.#ctor(System.String,System.Object)">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Runtime.Script.SimpleNumericAttribute.Minimum">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Runtime.Script.Credentials">
+      <summary>
+            Script Info
+            </summary>
+    </member>
+    <member name="P:Runtime.Script.Credentials.Author">
+      <summary>
+            The author of the script
+            </summary>
+    </member>
+    <member name="P:Runtime.Script.Credentials.Description">
+      <summary>
+            The full name of the script
+            </summary>
+    </member>
+    <member name="P:Runtime.Script.Credentials.Company">
+      <summary>
+            The Company string
+            </summary>
+    </member>
+    <member name="P:Runtime.Script.Credentials.Copyrights">
+      <summary>
+            The copyrights string
+            </summary>
+    </member>
+    <member name="P:Runtime.Script.Credentials.DateOfCreation">
+      <summary>
+            The date when the script was created
+            </summary>
+    </member>
+    <member name="P:Runtime.Script.Credentials.ExpirationDate">
+      <summary>
+            The expiration date for trial version.
+            0 when expiration not specified
+            </summary>
+    </member>
+    <member name="P:Runtime.Script.Credentials.Password">
+      <summary>
+            The password for the script.
+            Must be encrypted by the GetHashedPassword function
+            </summary>
+    </member>
+    <member name="P:Runtime.Script.Credentials.ProjectName">
+      <summary>
+            The name of the script 
+            </summary>
+    </member>
+    <member name="P:Runtime.Script.Credentials.Version">
+      <summary>
+            The version of the script
+            </summary>
+    </member>
+    <member name="T:Runtime.Script.InputParameterAttribute">
+      <summary>
+            All input parameters of the .NET script must be marked with this attribute
+            </summary>
+    </member>
+    <member name="M:Runtime.Script.InputParameterAttribute.#ctor(Runtime.Script.InputType,System.String)">
+      <summary>
+            Input Parameter
+            </summary>
+      <param name="comment">the displayed name</param>
+    </member>
+    <member name="M:Runtime.Script.InputParameterAttribute.#ctor(Runtime.Script.InputType,System.String,System.Int32)">
+      <summary>
+            Input Parameter
+            </summary>
+      <param name="comment">the displayed name</param>
+      <param name="orderNumber">the sort order for input parameter</param>
+    </member>
+    <member name="M:Runtime.Script.InputParameterAttribute.GetInputVarDescriptor(System.String,System.String,System.Type)">
+      <summary>
+            Input Parameter
+            </summary>
+      <param name="comment">the displayed name</param>
+      <param name="orderNumber">the sort order for input parameter</param>
+      <param name="variants">the set of possible values</param>
+    </member>
+    <member name="M:Runtime.Script.ICSharpIndicator.Update(Runtime.Script.TickStatus)">
+      <summary>
+            This base method will be invoked after a new quote comes in.
+            </summary>
+    </member>
+    <member name="T:Runtime.Script.TickStatus">
+      <summary>
+            TickStatus
+            </summary>
+    </member>
+    <member name="F:Runtime.Script.TickStatus.IsHistory">
+      <summary>
+            IsHistory
+            </summary>
+    </member>
+    <member name="F:Runtime.Script.TickStatus.IsBar">
+      <summary>
+            IsBar
+            </summary>
+    </member>
+    <member name="F:Runtime.Script.TickStatus.IsQuote">
+      <summary>
+            IsQuote
+            </summary>
+    </member>
+    <member name="M:Runtime.Script.CSharpIndicator.Update(Runtime.Script.TickStatus)">
+      <summary>
+            Entry point. This function is called when new quote comes.
+            </summary>
+    </member>
+    <member name="P:Runtime.Script.CSharpScript.Credentials">
+	
+      <summary>
+            Script credentials
+            </summary>
+    </member>
+	<member name="T:Runtime.Script.InputType">
+		<summary>
+		
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.InputType.Combobox">
+		<summary>
+		
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.InputType.Checkbox">
+		<summary>
+		
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.InputType.Numeric">
+		<summary>
+		
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.InputType.Color">
+		<summary>
+		
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.InputType.Instrument">
+		<summary>
+		
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.InputType.Account">
+		<summary>
+		
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.InputType.String">
+		<summary>
+		
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.InputType.DateTime">
+		<summary>
+		
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.InputType.TimeSpan">
+		<summary>
+		
+		</summary>
+	</member>
+	<member name="T:Runtime.Script.PanelType">
+		<summary>
+			PanelType
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.NotSpecified">
+		<summary>
+			NotSpecified
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.Watchlist">
+		<summary>
+			Watchlist
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.MarketDepth">
+		<summary>
+			MarketDepth
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.PositionBalance">
+		<summary>
+			PositionBalance
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.CurrenciesExsposure">
+		<summary>
+			CurrenciesExsposure
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.Positions">
+		<summary>
+			Positions
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.Orders">
+		<summary>
+			Orders
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.OrderHistory">
+		<summary>
+			OrderHistory
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.EventLog">
+		<summary>
+			EventLog
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.TimeSales">
+		<summary>
+			TimeSales
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.FilledOrders">
+		<summary>
+			FilledOrders
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.PanelType.Accounts">
+		<summary>
+			Accounts
+		</summary>
+	</member>
+	<member name="T:Runtime.Script.CustomColumnType">
+		<summary>
+			CustomColumnType
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.CustomColumnType.None">
+		<summary>
+			None
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.CustomColumnType.Value">
+		<summary>
+			Value
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.CustomColumnType.Button">
+		<summary>
+			Button
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.CustomSortType.String">
+		<summary>
+			String
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.CustomSortType.Int">
+		<summary>
+			Int
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.CustomSortType.Double">
+		<summary>
+			Double
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.CustomSortType.Long">
+		<summary>
+			Long
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.CustomSortType.DateTime">
+		<summary>
+			DateTime
+		</summary>
+	</member>
+	<member name="T:Runtime.Script.RowActionEnum">
+		<summary>
+			RowActionEnum
+		</summary>
+	</member>
+	<member name="F:Runtime.Script.RowActionEnum.ButtonClick">
+		<summary>
+			ButtonClick
+		</summary>
+	</member>
+  </members>
+</doc>
